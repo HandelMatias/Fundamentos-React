@@ -16,21 +16,21 @@ const LandingPage = () =>
 
         <nav className='mt-10'>
 
-          <Link to='/fundamentos' className={`${urlActual === '/fundamentos' ? 'text-blue-300 underline' : 'text-white'} text-2xl block mt-2 hover:text-blue-200`}>React</Link>
+          <Link to='/fundamentos' className={`${urlActual === '/fundamentos' ? 'text-blue-300 underline' : 'text-white'} text-2xl block mt-2 hover:text-blue-200`}>1.React</Link>
 
-          <Link to='/usestate' className={`${urlActual === '/usestate' ? 'text-blue-300 underline' : 'text-white'} text-2xl block mt-2 hover:text-blue-200`}>useState</Link>
+          <Link to='/usestate' className={`${urlActual === '/usestate' ? 'text-blue-300 underline' : 'text-white'} text-2xl block mt-2 hover:text-blue-200`}>2.useState</Link>
           
-          <Link to='/useffect' className={`${urlActual === '/useffect' ? 'text-blue-300 underline' : 'text-white'} text-2xl block mt-2 hover:text-blue-200`}>useEffect</Link>
+          <Link to='/useffect' className={`${urlActual === '/useffect' ? 'text-blue-300 underline' : 'text-white'} text-2xl block mt-2 hover:text-blue-200`}>3.useEffect</Link>
           
-          <Link to='/customhook' className={`${urlActual === '/customhook' ? 'text-blue-300 underline' : 'text-white'} text-2xl block mt-2 hover:text-blue-200`}>customHook</Link>
+          <Link to='/customhook' className={`${urlActual === '/customhook' ? 'text-blue-300 underline' : 'text-white'} text-2xl block mt-2 hover:text-blue-200`}>4.customHook</Link>
           
-          <Link to='/props' className={`${urlActual === '/props' ? 'text-blue-300 underline' : 'text-white'} text-2xl block mt-2 hover:text-blue-200`}>Props</Link>
+          <Link to='/props' className={`${urlActual === '/props' ? 'text-blue-300 underline' : 'text-white'} text-2xl block mt-2 hover:text-blue-200`}>5.Props</Link>
           
-          <Link to='/zustand' className={`${urlActual === '/zustand' ? 'text-blue-300 underline' : 'text-white'} text-2xl block mt-2 hover:text-blue-200`}>Zustand</Link>
+          <Link to='/zustand' className={`${urlActual === '/zustand' ? 'text-blue-300 underline' : 'text-white'} text-2xl block mt-2 hover:text-blue-200`}>7.Zustand</Link>
           
-          <Link to='/rederizado' className={`${urlActual === '/rederizado' ? 'text-blue-300 underline' : 'text-white'} text-2xl block mt-2 hover:text-blue-200`}>Renderizado</Link>
+          <Link to='/rederizado' className={`${urlActual === '/rederizado' ? 'text-blue-300 underline' : 'text-white'} text-2xl block mt-2 hover:text-blue-200`}>9.Renderizado</Link>
           
-          <Link to='/localstorage' className={`${urlActual === '/localstorage' ? 'text-blue-300 underline' : 'text-white'} text-2xl block mt-2 hover:text-blue-200`}>localStorage</Link>
+          <Link to='/localstorage' className={`${urlActual === '/localstorage' ? 'text-blue-300 underline' : 'text-white'} text-2xl block mt-2 hover:text-blue-200`}>10.localStorage</Link>
           
         </nav>
 

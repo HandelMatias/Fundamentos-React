@@ -31,7 +31,7 @@ const Segundo = () => {
         
         <div className="text-center mb-8">
         
-          <h2 className="mt-4 mb-4">Likes del vídeo: {counter}</h2>
+          <h2 className="mt-4 mb-4">Suscriptores: {counter}</h2>
         
           <button className="bg-green-700 text-white py-1 px-3 mx-1 rounded" onClick={()=>setCounter(counter + 1)}>Aumentar</button>
           

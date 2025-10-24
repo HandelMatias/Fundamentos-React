@@ -5,6 +5,7 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   plugins: [react(), tailwindcss()],
   server: {
-    allowedHosts: ['98e93ea5-9538-4ff9-9373-c75809af2597-00-3tonq8itozctu.picard.replit.dev']
-  }
+    allowedHosts: ['3525bf32-2569-4c70-bec9-25dc3ebd1aff-00-24nk8ttpvyh6r.worf.replit.dev']
+  },
+  base: "/Fundamentos-React",
 })

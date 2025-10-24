@@ -5,30 +5,24 @@
 
 */
 
-
 import { useEffect, useState } from "react"
 
-const Tercero = () => {
+const Cuarto = () => {
 
-  const [user, setUser] = useState({})
-  
-  const [buscar, setBuscar] = useState(1)
+  const [post, setPost] = useState({})
+  const [recargar, setRecargar] = useState(1)
 
-  const getUserIDApi = async() =>
-  {
-    const id = Math.floor(Math.random()*10)+1
-    const request = await fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
+  const getRandomPost = async () => {
+    const id = Math.floor(Math.random() * 10) + 1
+    const request = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`)
     const response = await request.json()
     console.log(response)
-    setUser(response)
+    setPost(response)
   }
-  
-  useEffect(()=>{
-    
-    getUserIDApi()
-  
-  },[buscar])
 
+  useEffect(() => {
+    getRandomPost()
+  }, [recargar])
 
   return (
     <>
@@ -44,22 +38,23 @@ const Tercero = () => {
 
       <div className="flex justify-center mb-8 mt-8">
 
-        <div className="w-120 border rounded-lg p-4 w-80 text-center">
+        <div className="w-120 border rounded-lg p-4 w-96 text-left bg-gray-50">
 
-          <h2 className="text-lg font-semibold mb-2">Bienvenido(a) - {user.name}</h2>
+          <h2 className="text-lg font-semibold mb-2">Post ID: {post.id}</h2>
+          <p className="mb-3"><strong>Título:</strong> {post.title}</p>
+          <p className="mb-3"><strong>Contenido:</strong> {post.body}</p>
 
-          <p className="mb-3 text-left">username: {user.username}</p>
-          <p className="mb-3 text-left">email: {user.email}</p>
-          <p className="mb-3 text-left">phone: {user.phone}</p>
-          <p className="mb-3 text-left">address: {user.address?.country}</p>
-          <p className="mb-3 text-left">location: {user.address?.geolo?.latitude ?? "N/A"}</p>
-          
+          <button 
+            className="bg-blue-600 text-white py-1 px-3 rounded w-full mt-4 hover:bg-blue-700"
+            onClick={() => setRecargar(recargar + 1)}
+          >
+            Obtener otro post
+          </button>
+
         </div>
-
       </div>
-
     </>
   )
 }
 
-export default Tercero
+export default Cuarto
