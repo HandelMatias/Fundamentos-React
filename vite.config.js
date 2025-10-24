@@ -7,5 +7,5 @@ export default defineConfig({
   server: {
     allowedHosts: ['3525bf32-2569-4c70-bec9-25dc3ebd1aff-00-24nk8ttpvyh6r.worf.replit.dev']
   },
-  base: "/Fundamentos-React",
+  base: "/",
 })
